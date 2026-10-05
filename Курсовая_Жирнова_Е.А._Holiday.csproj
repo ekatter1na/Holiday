@@ -1,0 +1,557 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2A8FAEB5-50F0-41DE-B2CE-7B8DEB6A737C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Курсовая_Жирнова_Е.А._Holiday</RootNamespace>
+    <AssemblyName>Курсовая_Жирнова_Е.А._Holiday</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddEventForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEventForm.Designer.cs">
+      <DependentUpon>AddEventForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnalisysForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnalisysForm.Designer.cs">
+      <DependentUpon>AnalisysForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Autorization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Autorization.Designer.cs">
+      <DependentUpon>Autorization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientForm.Designer.cs">
+      <DependentUpon>ClientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocumentsForm.Designer.cs">
+      <DependentUpon>DocumentsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EventForm.Designer.cs">
+      <DependentUpon>EventForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Holiday1DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Holiday1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HolidayDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HolidayDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HolidayDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HolidayDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HolidayDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HolidayDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HolidayDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HolidayDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HolidayDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HolidayDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HolidayDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HolidayDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HolidayDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HolidayDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HolidayDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HolidayDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HolidayDataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HolidayDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HolidayDataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HolidayDataSet17.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HolidayDataSet18.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HolidayDataSet18.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HolidayDataSet19.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HolidayDataSet19.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HolidayDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HolidayDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HolidayDataSet20.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HolidayDataSet20.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HolidayDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HolidayDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HolidayDataSet22.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HolidayDataSet22.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HolidayDataSet23.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HolidayDataSet23.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HolidayDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HolidayDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HolidayDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HolidayDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HolidayDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HolidayDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HolidayDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HolidayDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HolidayDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HolidayDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HolidayDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HolidayDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HolidayDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HolidayDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ModelDb.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StaffForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffForm.Designer.cs">
+      <DependentUpon>StaffForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateEventForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateEventForm.Designer.cs">
+      <DependentUpon>UpdateEventForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddEventForm.resx">
+      <DependentUpon>AddEventForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnalisysForm.resx">
+      <DependentUpon>AnalisysForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Autorization.resx">
+      <DependentUpon>Autorization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientForm.resx">
+      <DependentUpon>ClientForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentsForm.resx">
+      <DependentUpon>DocumentsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventForm.resx">
+      <DependentUpon>EventForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="StaffForm.resx">
+      <DependentUpon>StaffForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateEventForm.resx">
+      <DependentUpon>UpdateEventForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Holiday1DataSet.xsc">
+      <DependentUpon>Holiday1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Holiday1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Holiday1DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Holiday1DataSet.xss">
+      <DependentUpon>Holiday1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HolidayDataSet.xsc">
+      <DependentUpon>HolidayDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HolidayDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HolidayDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HolidayDataSet.xss">
+      <DependentUpon>HolidayDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HolidayDataSet1.xsc">
+      <DependentUpon>HolidayDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="HolidayDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HolidayDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HolidayDataSet1.xss">
+      <DependentUpon>HolidayDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="HolidayDataSet10.xsc">
+      <DependentUpon>HolidayDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="HolidayDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HolidayDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HolidayDataSet10.xss">
+      <DependentUpon>HolidayDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="HolidayDataSet11.xsc">
+      <DependentUpon>HolidayDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="HolidayDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HolidayDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HolidayDataSet11.xss">
+      <DependentUpon>HolidayDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="HolidayDataSet12.xsc">
+      <DependentUpon>HolidayDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="HolidayDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HolidayDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HolidayDataSet12.xss">
+      <DependentUpon>HolidayDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="HolidayDataSet13.xsc">
+      <DependentUpon>HolidayDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="HolidayDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HolidayDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HolidayDataSet13.xss">
+      <DependentUpon>HolidayDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="HolidayDataSet14.xsc">
+      <DependentUpon>HolidayDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="HolidayDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HolidayDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HolidayDataSet14.xss">
+      <DependentUpon>HolidayDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="HolidayDataSet15.xsc">
+      <DependentUpon>HolidayDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="HolidayDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HolidayDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HolidayDataSet15.xss">
+      <DependentUpon>HolidayDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="HolidayDataSet16.xsc">
+      <DependentUpon>HolidayDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="HolidayDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HolidayDataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HolidayDataSet16.xss">
+      <DependentUpon>HolidayDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="HolidayDataSet17.xsc">
+      <DependentUpon>HolidayDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="HolidayDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HolidayDataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HolidayDataSet17.xss">
+      <DependentUpon>HolidayDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="HolidayDataSet18.xsc">
+      <DependentUpon>HolidayDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="HolidayDataSet18.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HolidayDataSet18.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HolidayDataSet18.xss">
+      <DependentUpon>HolidayDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="HolidayDataSet19.xsc">
+      <DependentUpon>HolidayDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="HolidayDataSet19.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HolidayDataSet19.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HolidayDataSet19.xss">
+      <DependentUpon>HolidayDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="HolidayDataSet2.xsc">
+      <DependentUpon>HolidayDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="HolidayDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HolidayDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HolidayDataSet2.xss">
+      <DependentUpon>HolidayDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="HolidayDataSet20.xsc">
+      <DependentUpon>HolidayDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="HolidayDataSet20.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HolidayDataSet20.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HolidayDataSet20.xss">
+      <DependentUpon>HolidayDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="HolidayDataSet21.xsc">
+      <DependentUpon>HolidayDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="HolidayDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HolidayDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HolidayDataSet21.xss">
+      <DependentUpon>HolidayDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="HolidayDataSet22.xsc">
+      <DependentUpon>HolidayDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="HolidayDataSet22.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HolidayDataSet22.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HolidayDataSet22.xss">
+      <DependentUpon>HolidayDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="HolidayDataSet23.xsc">
+      <DependentUpon>HolidayDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="HolidayDataSet23.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HolidayDataSet23.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HolidayDataSet23.xss">
+      <DependentUpon>HolidayDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="HolidayDataSet3.xsc">
+      <DependentUpon>HolidayDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="HolidayDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HolidayDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HolidayDataSet3.xss">
+      <DependentUpon>HolidayDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="HolidayDataSet4.xsc">
+      <DependentUpon>HolidayDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="HolidayDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HolidayDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HolidayDataSet4.xss">
+      <DependentUpon>HolidayDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="HolidayDataSet5.xsc">
+      <DependentUpon>HolidayDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="HolidayDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HolidayDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HolidayDataSet5.xss">
+      <DependentUpon>HolidayDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="HolidayDataSet6.xsc">
+      <DependentUpon>HolidayDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="HolidayDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HolidayDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HolidayDataSet6.xss">
+      <DependentUpon>HolidayDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="HolidayDataSet7.xsc">
+      <DependentUpon>HolidayDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="HolidayDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HolidayDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HolidayDataSet7.xss">
+      <DependentUpon>HolidayDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="HolidayDataSet8.xsc">
+      <DependentUpon>HolidayDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="HolidayDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HolidayDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HolidayDataSet8.xss">
+      <DependentUpon>HolidayDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="HolidayDataSet9.xsc">
+      <DependentUpon>HolidayDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="HolidayDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HolidayDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HolidayDataSet9.xss">
+      <DependentUpon>HolidayDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
